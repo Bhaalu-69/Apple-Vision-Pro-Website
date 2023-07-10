@@ -24,8 +24,9 @@ const server = http.createServer((req, res) => {
     }
 
     // Serving static files
-    else if (req.url.startsWith('/static')) {
-        const filePath = path.join(__dirname, req.url);
+    else if (req.url.startsWith('/')) {
+        const filePath = path.join(__dirname, 'public/static', req.url);
+        
 
         fs.readFile(filePath, (err, content) => {
             if (err) {
