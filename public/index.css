@@ -12,6 +12,7 @@ body {
     overflow-x: hidden;
 }
 
+/* CSS for firstNavBar */
 #firstNavBar {
     display: flex;
     flex-direction: row;
@@ -53,6 +54,35 @@ body {
 }
 
 #firstNavBar>a>i {
+    color: white;
+}
+
+/* CSS for dropdowns of firstNavBar */
+#storeDropdownMenu {
+    position: absolute;
+    z-index: 2000;
+    background-color: #161617;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 90px;
+    width: 100vw;
+}
+
+#storeDropdownMenu a {
+    text-decoration: none;
+}
+
+#storeDropdownMenu>div {
+    margin: 0 33px;
+}
+
+/* Utility Classes for firstNavBar */
+.firstColumnDropdown h6 {
+    color: rgb(167, 167, 167);
+}
+
+.firstColumnDropdown a {
+    text-decoration: none;
     color: white;
 }
 
