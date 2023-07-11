@@ -9,6 +9,72 @@ html, body{
     height: 100%;
 }
 
+#firstNavBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px 70px;
+    width: 100vw;
+    position: relative;
+}
+#firstNavBar > a > img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+#firstNavBar > ul {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+#firstNavBar > ul:hover {
+    cursor: default;
+}
 #firstNavBar > ul > li {
-    font-size: 100px;
+    font-size: 12px;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(167, 167, 167);
+}
+#firstNavBar > ul > li:hover {
+    cursor: default;
+}
+#firstNavBar > a > i {
+    color: white;
+}
+
+#secondNavBar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 90px;
+    width: 100vw;
+    position: relative;
+    color: white;
+}
+#secondNavBar > h2 {
+    font-weight: 500;
+}
+#secondNavBar > button {
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    border-radius: 22px;
+    padding: 6px 10px;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
 }
