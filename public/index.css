@@ -43,6 +43,13 @@ body {
     list-style: none;
     text-decoration: none;
     color: rgb(167, 167, 167);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#firstNavBar>ul>li:hover {
+    color: white;
+    text-shadow: white;
 }
 
 #firstNavBar>a>i {
@@ -58,8 +65,9 @@ body {
     flex-direction: row;
     padding: 10px 60px;
     width: 100vw;
-    height: 65vh;
-    display: none;
+    height: 0vh;
+    transition: all 0.3s;
+    opacity: 0;
 }
 
 #storeDropdownMenu a {
@@ -67,6 +75,50 @@ body {
 }
 
 #storeDropdownMenu>div {
+    margin: 0 33px;
+}
+
+#macDropdownMenu {
+    position: absolute;
+    z-index: 2000;
+    background-color: #161617;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 60px;
+    width: 100vw;
+    height: 0vh;
+    transition: all 0.3s;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+#macDropdownMenu a {
+    text-decoration: none;
+}
+
+#macDropdownMenu>div {
+    margin: 0 33px;
+}
+
+#iPadDropdownMenu {
+    position: absolute;
+    z-index: 2000;
+    background-color: #161617;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 60px;
+    width: 100vw;
+    height: 0vh;
+    transition: all 0.3s;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+#iPadDropdownMenu a {
+    text-decoration: none;
+}
+
+#iPadDropdownMenu>div {
     margin: 0 33px;
 }
 
@@ -114,8 +166,7 @@ body {
     font-size: 12px;
 }
 
-#blurBackground::before {
-    content: '';
+#blurBackground {
     background: rgba(0, 0, 0, 0.4);
     background-position: center;
     background-repeat: no-repeat;
@@ -125,14 +176,39 @@ body {
     height: 100vh;
     width: 100vw;
     backdrop-filter: blur(10px);
-    display: none;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
 /* CSS for making dropdowns visible on hover */
-#firstNavBar>ul>li:nth-child(1):hover #storeDropdownMenu,
-#firstNavBar>ul>li:nth-child(1):hover #blurBackground::before {
-    display: block;
+#firstNavBar:has(li:nth-child(1):hover) ~ #storeDropdownMenu {
+    display: flex;
+    opacity: 1;
+    height: 65vh;
 }
+#firstNavBar:has(li:nth-child(1):hover) ~ #blurBackground {
+    opacity: 1;
+}
+
+#firstNavBar:has(li:nth-child(2):hover) ~ #macDropdownMenu {
+    display: flex;
+    opacity: 1;
+    height: 75vh;
+}
+#firstNavBar:has(li:nth-child(2):hover) ~ #blurBackground {
+    opacity: 1;
+}
+
+#firstNavBar:has(li:nth-child(3):hover) ~ #macDropdownMenu {
+    display: flex;
+    opacity: 1;
+    height: 75vh;
+}
+#firstNavBar:has(li:nth-child(3):hover) ~ #blurBackground {
+    opacity: 1;
+}
+
+
 
 /* CSS for secondNavBar */
 #secondNavBar {
