@@ -144,6 +144,116 @@ body {
     margin: 0 33px;
 }
 
+#watchDropdownMenu {
+    position: absolute;
+    z-index: 2000;
+    background-color: #161617;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 60px;
+    width: 100vw;
+    height: 0vh;
+    transition: all 0.3s;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+#watchDropdownMenu a {
+    text-decoration: none;
+}
+
+#watchDropdownMenu>div {
+    margin: 0 33px;
+}
+
+#airPodsDropdownMenu {
+    position: absolute;
+    z-index: 2000;
+    background-color: #161617;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 60px;
+    width: 100vw;
+    height: 0vh;
+    transition: all 0.3s;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+#airPodsDropdownMenu a {
+    text-decoration: none;
+}
+
+#airPodsDropdownMenu>div {
+    margin: 0 33px;
+}
+
+#tvDropdownMenu {
+    position: absolute;
+    z-index: 2000;
+    background-color: #161617;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 60px;
+    width: 100vw;
+    height: 0vh;
+    transition: all 0.3s;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+#tvDropdownMenu a {
+    text-decoration: none;
+}
+
+#tvDropdownMenu>div {
+    margin: 0 33px;
+}
+
+#entertainmentDropdownMenu {
+    position: absolute;
+    z-index: 2000;
+    background-color: #161617;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 60px;
+    width: 100vw;
+    height: 0vh;
+    transition: all 0.3s;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+#entertainmentDropdownMenu a {
+    text-decoration: none;
+}
+
+#entertainmentDropdownMenu>div {
+    margin: 0 33px;
+}
+
+#accessoriesDropdownMenu {
+    position: absolute;
+    z-index: 2000;
+    background-color: #161617;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 60px;
+    width: 100vw;
+    height: 0vh;
+    transition: all 0.3s;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+#accessoriesDropdownMenu a {
+    text-decoration: none;
+}
+
+#accessoriesDropdownMenu>div {
+    margin: 0 33px;
+}
+
 /* Utility for firstNavBar */
 .firstColumnDropdown {
     line-height: 30px;
@@ -203,39 +313,95 @@ body {
 }
 
 /* CSS for making dropdowns visible on hover */
-#firstNavBar:has(li:nth-child(1):hover) ~ #storeDropdownMenu {
+#firstNavBar:has(li:nth-child(1):hover)~#storeDropdownMenu {
     display: flex;
     opacity: 1;
     height: 65vh;
 }
-#firstNavBar:has(li:nth-child(1):hover) ~ #blurBackground {
+
+#firstNavBar:has(li:nth-child(1):hover)~#blurBackground {
     opacity: 1;
 }
 
-#firstNavBar:has(li:nth-child(2):hover) ~ #macDropdownMenu {
+#firstNavBar:has(li:nth-child(2):hover)~#macDropdownMenu {
     display: flex;
     opacity: 1;
     height: 75vh;
 }
-#firstNavBar:has(li:nth-child(2):hover) ~ #blurBackground {
+
+#firstNavBar:has(li:nth-child(2):hover)~#blurBackground {
     opacity: 1;
 }
 
-#firstNavBar:has(li:nth-child(3):hover) ~ #iPadDropdownMenu {
+#firstNavBar:has(li:nth-child(3):hover)~#iPadDropdownMenu {
     display: flex;
     opacity: 1;
     height: 75vh;
 }
-#firstNavBar:has(li:nth-child(3):hover) ~ #blurBackground {
+
+#firstNavBar:has(li:nth-child(3):hover)~#blurBackground {
     opacity: 1;
 }
 
-#firstNavBar:has(li:nth-child(4):hover) ~ #iPhoneDropdownMenu {
+#firstNavBar:has(li:nth-child(4):hover)~#iPhoneDropdownMenu {
     display: flex;
     opacity: 1;
     height: 65vh;
 }
-#firstNavBar:has(li:nth-child(4):hover) ~ #blurBackground {
+
+#firstNavBar:has(li:nth-child(4):hover)~#blurBackground {
+    opacity: 1;
+}
+
+#firstNavBar:has(li:nth-child(5):hover)~#watchDropdownMenu {
+    display: flex;
+    opacity: 1;
+    height: 65vh;
+}
+
+#firstNavBar:has(li:nth-child(5):hover)~#blurBackground {
+    opacity: 1;
+}
+
+/* Note: nth-child(6) has no dropdown menu. */
+
+#firstNavBar:has(li:nth-child(7):hover)~#airPodsDropdownMenu {
+    display: flex;
+    opacity: 1;
+    height: 65vh;
+}
+
+#firstNavBar:has(li:nth-child(7):hover)~#blurBackground {
+    opacity: 1;
+}
+
+#firstNavBar:has(li:nth-child(8):hover)~#tvDropdownMenu {
+    display: flex;
+    opacity: 1;
+    height: 65vh;
+}
+
+#firstNavBar:has(li:nth-child(8):hover)~#blurBackground {
+    opacity: 1;
+}
+
+#firstNavBar:has(li:nth-child(9):hover)~#entertainmentDropdownMenu {
+    display: flex;
+    opacity: 1;
+    height: 85vh;
+}
+
+#firstNavBar:has(li:nth-child(9):hover)~#blurBackground {
+    opacity: 1;
+}
+
+#firstNavBar:has(li:nth-child(10):hover)~#accessoriesDropdownMenu {
+    display: flex;
+    opacity: 1;
+    height: 65vh;
+}
+
+#firstNavBar:has(li:nth-child(10):hover)~#blurBackground {
     opacity: 1;
 }
 
