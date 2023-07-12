@@ -122,6 +122,28 @@ body {
     margin: 0 33px;
 }
 
+#iPhoneDropdownMenu {
+    position: absolute;
+    z-index: 2000;
+    background-color: #161617;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 60px;
+    width: 100vw;
+    height: 0vh;
+    transition: all 0.3s;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+#iPhoneDropdownMenu a {
+    text-decoration: none;
+}
+
+#iPhoneDropdownMenu>div {
+    margin: 0 33px;
+}
+
 /* Utility for firstNavBar */
 .firstColumnDropdown {
     line-height: 30px;
@@ -199,12 +221,21 @@ body {
     opacity: 1;
 }
 
-#firstNavBar:has(li:nth-child(3):hover) ~ #macDropdownMenu {
+#firstNavBar:has(li:nth-child(3):hover) ~ #iPadDropdownMenu {
     display: flex;
     opacity: 1;
     height: 75vh;
 }
 #firstNavBar:has(li:nth-child(3):hover) ~ #blurBackground {
+    opacity: 1;
+}
+
+#firstNavBar:has(li:nth-child(4):hover) ~ #iPhoneDropdownMenu {
+    display: flex;
+    opacity: 1;
+    height: 65vh;
+}
+#firstNavBar:has(li:nth-child(4):hover) ~ #blurBackground {
     opacity: 1;
 }
 
