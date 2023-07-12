@@ -130,7 +130,7 @@ body {
 
 /* CSS for making dropdowns visible on hover */
 #firstNavBar>ul>li:nth-child(1):hover #storeDropdownMenu,
-#firstNavBar>ul>li:nth-child(1):hover #blurBackground {
+#firstNavBar>ul>li:nth-child(1):hover #blurBackground::before {
     display: block;
 }
 
