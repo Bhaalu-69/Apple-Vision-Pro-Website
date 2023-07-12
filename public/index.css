@@ -37,20 +37,12 @@ body {
     justify-content: space-around;
 }
 
-#firstNavBar>ul:hover {
-    cursor: default;
-}
-
 #firstNavBar>ul>li {
     font-size: 12px;
     font-weight: 400;
     list-style: none;
     text-decoration: none;
     color: rgb(167, 167, 167);
-}
-
-#firstNavBar>ul>li:hover {
-    cursor: default;
 }
 
 #firstNavBar>a>i {
@@ -64,8 +56,10 @@ body {
     background-color: #161617;
     display: flex;
     flex-direction: row;
-    padding: 10px 90px;
+    padding: 10px 60px;
     width: 100vw;
+    height: 65vh;
+    opacity: 0;
 }
 
 #storeDropdownMenu a {
@@ -76,9 +70,16 @@ body {
     margin: 0 33px;
 }
 
-/* Utility Classes for firstNavBar */
+/* Utility for firstNavBar */
+.firstColumnDropdown {
+    line-height: 30px;
+}
+
 .firstColumnDropdown h6 {
     color: rgb(167, 167, 167);
+    font-weight: 200;
+    font-size: 13px;
+    padding: 10px 0;
 }
 
 .firstColumnDropdown a {
@@ -86,6 +87,55 @@ body {
     color: white;
 }
 
+.firstColumnDropdown h3 {
+    font-size: 23px;
+    margin: 10px 30px 0 0;
+}
+
+.subsequentColumnDropdown {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+.subsequentColumnDropdown h6 {
+    padding: 10px 0;
+    color: rgb(167, 167, 167);
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.subsequentColumnDropdown a {
+    text-decoration: none;
+    color: white;
+}
+
+.subsequentColumnDropdown h3 {
+    font-size: 12px;
+}
+
+#blurBackground::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 1500;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+}
+
+/* CSS for making dropdowns visible on hover */
+#firstNavBar>ul>li:nth-child(1)::hover #storeDropdownMenu,
+#firstNavBar>ul>li:nth-child(1)::hover #blurBackground{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* CSS for secondNavBar */
 #secondNavBar {
     position: sticky;
     top: 0;
