@@ -254,6 +254,28 @@ body {
     margin: 0 33px;
 }
 
+#supportDropdownMenu {
+    position: absolute;
+    z-index: 2000;
+    background-color: #161617;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 60px;
+    width: 100vw;
+    height: 0vh;
+    transition: all 0.3s;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+#supportDropdownMenu a {
+    text-decoration: none;
+}
+
+#supportDropdownMenu>div {
+    margin: 0 33px;
+}
+
 /* Utility for firstNavBar */
 .firstColumnDropdown {
     line-height: 30px;
@@ -402,6 +424,16 @@ body {
 }
 
 #firstNavBar:has(li:nth-child(10):hover)~#blurBackground {
+    opacity: 1;
+}
+
+#firstNavBar:has(li:nth-child(11):hover)~#supportDropdownMenu {
+    display: flex;
+    opacity: 1;
+    height: 65vh;
+}
+
+#firstNavBar:has(li:nth-child(11):hover)~#blurBackground {
     opacity: 1;
 }
 
