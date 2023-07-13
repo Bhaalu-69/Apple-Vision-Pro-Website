@@ -9,6 +9,9 @@ html,
 body {
     width: 100%;
     height: 100%;
+}
+
+body {
     overflow-x: hidden;
 }
 
@@ -468,11 +471,15 @@ body {
 }
 
 #page1 {
-    position: absolute;
+    position: relative;
     height: 100vh;
     width: 100vw;
     background-color: black;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 #page1::before {
@@ -484,4 +491,91 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+
+#page1>h3 {
+    color: #6E6E73;
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 80px;
+}
+
+#page1 img {
+    width: 53px;
+    height: 53px;
+}
+
+#page1>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+#page1>div>h1 {
+    font-size: 58px;
+    font-weight: 600;
+}
+
+#page2 {
+    position: relative;
+    height: 150vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2>div>h2 {
+    font-size: 46px;
+    margin-top: 400px;
+    margin-bottom: 100px;
+}
+
+#page2>div>video {
+    width: 92vw;
+    height: 118vh;
+}
+
+#page3 {
+    position: relative;
+    height: 150vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3>div>h2 {
+    font-size: 46px;
+    margin-top: 400px;
+    margin-bottom: 100px;
+}
+
+#page3>div>video {
+    width: 92vw;
+    height: 118vh;
 }
