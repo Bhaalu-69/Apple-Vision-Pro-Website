@@ -524,8 +524,6 @@ body {
 
 #page2 {
     position: relative;
-    height: 150vh;
-    width: 100vw;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -542,7 +540,7 @@ body {
 
 #page2>div>h2 {
     font-size: 46px;
-    margin-top: 400px;
+    margin-top: 204px;
     margin-bottom: 100px;
 }
 
@@ -553,8 +551,6 @@ body {
 
 #page3 {
     position: relative;
-    height: 150vh;
-    width: 100vw;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -571,11 +567,38 @@ body {
 
 #page3>div>h2 {
     font-size: 46px;
-    margin-top: 400px;
+    margin-top: 194px;
     margin-bottom: 100px;
 }
 
 #page3>div>video {
+    width: 92vw;
+    height: 118vh;
+}
+
+#page4 {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page4>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page4>div>h2 {
+    font-size: 46px;
+    margin-top: 194px;
+    margin-bottom: 100px;
+}
+
+#page4>div>video {
     width: 92vw;
     height: 118vh;
 }
