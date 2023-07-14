@@ -522,6 +522,34 @@ body {
     font-weight: 600;
 }
 
+/*  */
+.page {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page>div>h2 {
+    font-size: 46px;
+    margin-top: 204px;
+    margin-bottom: 100px;
+}
+
+.page>div>video {
+    width: 92vw;
+    height: 118vh;
+}
+/*  */
 #page2 {
     position: relative;
     background-color: white;
