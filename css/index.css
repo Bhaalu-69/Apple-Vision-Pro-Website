@@ -774,3 +774,45 @@ body {
     top: 100vh;
     right: -25vw;
 }
+
+#page-12>img {
+    width: 90vw;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+#page-12>div {
+    width: 90vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#page-12>div>h5 {
+    color: #86868B;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+#page-12>div>h5>span {
+    color: black;
+}
+
+#second-div-page-12 {
+    width: 70vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 0;
+}
+
+#second-div-page-12>img {
+    width: 50%;
+    object-fit: cover;
+}
+
+#second-div-page-12>img:nth-child(2) {
+    margin-top: 0;
+}
