@@ -848,3 +848,31 @@ body {
 #second-div-page-13>button:hover {
     background-color: #FE6918;
 }
+
+#page-15 {
+    padding: 0;
+}
+
+#page-15>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#page-15>div>img {
+    padding-top: 3rem;
+    width: 44%;
+    object-fit: cover;
+    margin: 0.5rem;
+}
+
+#text-heading-page-15 {
+    width: 25%;
+}
+
+#page-15>div>div>div>h6 {
+    font-weight: 700;
+    width: 120%;
+}
