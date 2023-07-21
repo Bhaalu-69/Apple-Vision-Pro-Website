@@ -646,7 +646,8 @@ body {
 
 #page-7,
 #page-9,
-#page-11 {
+#page-11,
+#page-14 {
     background-color: #F5F5F7;
 }
 
@@ -801,18 +802,49 @@ body {
 }
 
 #second-div-page-12 {
-    width: 70vh;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin-bottom: 0;
+    margin-bottom: -3rem;
 }
 
 #second-div-page-12>img {
-    width: 50%;
+    width: 48.5%;
     object-fit: cover;
 }
 
-#second-div-page-12>img:nth-child(2) {
-    margin-top: 0;
+#page-13>div>h3 {
+    margin: 6rem;
+    width: 50%;
+    align-self: center;
+    color: #86868B;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#page-13>div>h3>span {
+    color: black;
+}
+
+#page-13>div>img {
+    width: 90vw;
+    margin-top: 5rem;
+}
+
+#second-div-page-13>button {
+    position: absolute;
+    bottom: 7%;
+    left: 37%;
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+#second-div-page-13>button:hover {
+    background-color: #FE6918;
 }
