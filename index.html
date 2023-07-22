@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Vision Pro - Apple</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -866,22 +867,80 @@
                 </div>
             </div>
         </div>
-    </section>
-    <div class="slidercontainer">
-        <div class="showSlide fade">
-            <img src="static/environment_moon.jpg" />
-            <div class="content">Slide1 heading</div>
-        </div>
-        <div class="showSlide fade">
-            <img src="static/environment_mt_hood.jpg" />
-            <div class="content">Slide2 heading</div>
-        </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="static/environment_moon.jpg" alt="Moon"></div>
+                <div class="swiper-slide"><img src="static/environment_mt_hood.jpg" alt="MT Hood"></div>
+                <div class="swiper-slide"><img src="static/environment_white_sand.jpg" alt="White Sand"></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-        <div class="showSlide fade">
-            <img src="static/environment_white_sand.jpg" />
-            <div class="content">Slide3 heading</div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-        <script src="js/index.js"></script>
+        <div class="bottom-div-page">
+            <div>
+                <h6 id="text-heading-page-15">Expand your surroundings.</h6>
+                <div>
+                    <h6>Environments let you transform the space around you, so apps can extend beyond the dimensions of
+                        your room. Choose from a selection of beautiful landscapes, or magically replace your ceiling
+                        with a clear, open sky. The Digital Crown gives you full control over how immersed you are.
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <img src="static/around_you.jpg" alt="Around You">
+        <div class="bottom-div-page">
+            <div>
+                <h6 id="text-heading-page-15">Stay connected to people around you.</h6>
+                <div>
+                    <h6>Vision Pro helps you remain connected to those around you. EyeSight reveals your eyes and lets
+                        those nearby know when you’re using apps or fully immersed in an experience. When someone
+                        approaches, Vision Pro simultaneously lets you see the person and reveals your eyes to them.
+                    </h6>
+                    <button><i class='bx bx-plus'></i> Learn more about visionOS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 16 begins -->
+    <section class="page page-with-video-text" id="page-16">
+        <div>
+            <h6>Technology</h6>
+            <h3>Innovation you can</h3>
+            <h3>see, hear, and feel.</h3>
+            <p>Pushing boundaries from the inside out. <span>Spatial experiences on Vision Pro are only possible through
+                    groundbreaking Apple technology. Displays the size of a postage stamp that deliver more pixels than
+                    a 4K TV to each eye. Incredible advances in Spatial Audio. A revolutionary dual‑chip design
+                    featuring custom Apple silicon. A sophisticated array of cameras and sensors. All the elements work
+                    together to create an unprecedented experience you have to see to believe.</span></p>
+        </div>
+        <img src="static/hero_base.jpg" alt="Hero Base">
+        <div>
+            <h4>More pixels than a 4K TV. For each eye.</h4>
+            <p>The <span>custom micro‑OLED display system</span> features 23 million pixels, delivering stunning
+                resolution and colors. And a specially designed three‑element lens creates the feeling of a display
+                that’s everywhere you look.</p>
+        </div>
+    </section>
+
+    <!-- Page 17 begins -->
+    <section class="page" id="page-17">
+        <img src="static/spatial_audio_base.jpg" alt="Spatial Audio Base">
+        <div>
+            <h4>Our most advanced Spatial Audio system ever.</h4>
+            <p>Dual-driver audio pods positioned next to each ear deliver personalized sound while letting you hear what’s around you. Ambient <span>Spatial Audio</span> makes sounds feel like they’re coming from your surroundings. And with audio raytracing, Vision Pro analyzes your room’s acoustic properties — including the physical materials — to adapt and match sound to your space.</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
