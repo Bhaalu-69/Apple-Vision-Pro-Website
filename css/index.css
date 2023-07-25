@@ -772,7 +772,7 @@ body {
     height: 210vh;
     object-fit: cover;
     position: absolute;
-    top: 100vh;
+    top: 69vh;
     right: -25vw;
 }
 
@@ -892,6 +892,7 @@ body {
     background-color: white;
     transition: transform ease 0.8;
 }
+
 .swiper-pagination-bullet:hover {
     transform: scale(1.2);
 }
@@ -916,19 +917,20 @@ body {
 #page-16>div>h3 {
     font-size: 5rem;
 }
+
 #page-16>div>p {
     font-weight: 600;
     font-size: 1.4rem;
     width: 60%;
     margin-bottom: 5rem;
 }
+
 #page-16>div>p>span {
     color: #86868B;
 }
 
 #page-16>img {
     width: 80vw;
-    object-fit: cover;
     margin-bottom: 3rem;
 }
 
@@ -943,6 +945,7 @@ body {
     width: 50%;
     color: #86868B;
 }
+
 #page-16>div:nth-child(3)>p>span {
     color: white;
 }
@@ -952,6 +955,138 @@ body {
     color: white;
 }
 
-#page-17>img {
+#page-17>video {
     width: 100vw;
+    margin-bottom: 20%;
+}
+
+#page-17>div {
+    width: 28.5%;
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+}
+
+#page-17>div>h4 {
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#page-17>div>p {
+    color: #86868B;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+#page-17>div>p>span {
+    color: white;
+}
+
+#page-18 {
+    background-color: black;
+    color: white;
+    padding: 10rem;
+}
+
+#page-18>img {
+    width: 66vw;
+    margin-bottom: 4rem;
+}
+
+#page-18>div {
+    width: 60%;
+}
+
+#page-18>div>h4 {
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#page-18>div>p {
+    color: #86868B;
+    font-weight: 600;
+    font-size: 1.35rem;
+}
+
+#page-18>div>p>span {
+    color: white;
+}
+
+#page-19 {
+    background-color: black;
+    color: white;
+    padding: 7rem;
+}
+
+#page-19>img {
+    width: 66vw;
+    margin-bottom: 4rem;
+}
+
+#page-19>div {
+    width: 60%;
+}
+
+#page-19>div>h4 {
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#page-19>div>p {
+    color: #86868B;
+    font-weight: 600;
+    font-size: 1.35rem;
+}
+
+#page-19>div>p>span {
+    color: white;
+}
+
+#page-20 {
+    background-color: black;
+    color: white;
+    padding: 7rem;
+}
+
+#page-20>img {
+    width: 66vw;
+    margin-bottom: 4rem;
+}
+
+#page-20>div {
+    width: 49%;
+}
+
+#page-20>div>h4 {
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#page-20>div>p {
+    color: #86868B;
+    font-weight: 600;
+    font-size: 1.35rem;
+}
+
+#page-20>div>p>span {
+    color: white;
+}
+
+#page-20>button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 4rem 0;
+}
+#page-20>button:hover {
+    background-color: rgb(227, 227, 227);
 }
