@@ -1087,6 +1087,51 @@ body {
     font-size: 1.2rem;
     margin: 4rem 0;
 }
+
 #page-20>button:hover {
     background-color: rgb(227, 227, 227);
+}
+
+#page-21>img {
+    width: 70px;
+    margin-top: 200px;
+    margin-bottom: 2rem;
+}
+
+#page-21>div:nth-child(2)>h6 {
+    font-size: 1.5rem;
+}
+
+#page-21>div:nth-child(2)>h2 {
+    font-size: 3.9rem;
+    width: 70%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+#page-21>div:nth-child(2)>p {
+    text-align: center;
+    color: #86868B;
+    font-weight: 600;
+    width: 55%;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+#page-21>div:nth-child(2)>p>span {
+    color: black;
+}
+
+#page-21>button {
+    color: white;
+    background-color: #FE6918;
+    border-radius: 2rem;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 3rem 2rem;
+    padding: 1rem 2rem;
 }
